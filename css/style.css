@@ -119,17 +119,22 @@ body{
 .home-img{
     max-width: 450px;
     margin-right: -20px;
+   
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2s, 3s;
+}
+.home-img img{
+     border-radius: 3rem;
+     box-shadow: 0 0 2.2rem #0ef;
 }
 
 .social-media a{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 2.6rem;
+    height: 2.6rem;
     background: transparent;
     border:2px solid #0ef ;
     border-radius: 50%;
