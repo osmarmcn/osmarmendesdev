@@ -4,3 +4,204 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+
+body{
+    background: #1f242d;
+    color: white;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo{
+    font-size: 1.35rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+
+}
+
+.navbar{
+    font-size: 1rem;
+    
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    
+
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #0ef;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10% 0;
+
+}
+
+.home-content{
+    max-width: 600px;
+
+}
+
+.home-content h3{
+    font-size: 1.85rem;
+    font-weight: lighter;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
+}
+
+.home-content h3:nth-last-of-type(2){
+    margin-bottom: 1.4rem ;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3 span{
+    color: #0ef ;
+    font-weight: bold;
+
+}
+
+.home-content h1{
+    font-size: 2.4rem;
+    margin: 2px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content p{
+    font-size: 1.1rem;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+
+.home-img{
+    max-width: 450px;
+    margin-right: -20px;
+}
+
+.social-media a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border:2px solid #0ef ;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    color: #0ef ;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+    background: #0ef;
+    color: #1f242d;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 1.6rem;
+    background: #0ef;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: .9rem;
+    color: #1f242d;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* key frames */
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
