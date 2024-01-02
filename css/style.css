@@ -89,7 +89,7 @@ body{
 }
 
 .home-content h3{
-    font-size: 1.85rem;
+    font-size: 1.45rem;
     font-weight: lighter;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
