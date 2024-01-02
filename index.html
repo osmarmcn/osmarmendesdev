@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <title>Website Portfólio</title>
 </head>
 <body>
@@ -16,9 +17,9 @@
         <nav class="navbar">
             <a href="#home" style="--i:1;" class="active">Home</a>
             <a href="#about" style="--i:2;">About</a>
-            <a href="" style="--i:3;">Skills</a>
+            <a href="#skills" style="--i:3;">Skills</a>
             <a href="#portfolio" style="--i:4;">Portifolio</a>
-            <a href="" style="--i:5;">Contact</a>
+            <a href="#contact" style="--i:5;">Contact</a>
         </nav>
     </header>
     <!-- section home -->
@@ -57,7 +58,7 @@
             <a href="#" class="btn">Read More</a>
         </div>
 
-        <div class="about-skill">
+        <div class="about-skill" id="Skills">
             <h2 class="skill-title">Skills</h2>
             <div class="cards">
                     <div class="box">
@@ -167,6 +168,33 @@
 
 
     </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Seu nome">
+                <input type="email" placeholder="Seu e-mail">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Seu telefone">
+                <input type="text" placeholder="Seu e-mail">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+            <input type="submit" value="Send" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>copyright &copy; 2023 Osmar Mendes | ALL Rights Reserved.</p>
+            
+        </div>
+        <div class="footer-icon">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
 
     
 
