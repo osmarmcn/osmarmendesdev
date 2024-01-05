@@ -6,6 +6,19 @@ var typed = new Typed(".dynamic-text", {
     loop: true
 })
 
+let menuIcon = document.getElementById('menu-icon')
+let navbar = document.querySelector('.navbar')
+// <i class='bx bxs-x-circle'></i>
+menuIcon.addEventListener("click", (e) =>{
+    e.classList.toggle('bxs-x-circle')
+    navbar.classList.toggle('active')
+})
+// menuIcon.onclick = () => {
+//     menu
+//     
+// }
+
+
 // -------------------------------------------------------------------------------//
 
 let section = document.querySelectorAll('section')
@@ -31,3 +44,6 @@ window.onscroll = () =>{
 
 let header = document.querySelector('header')
 header.classList.toggle('sticky', window.scrollY > 100)
+
+
+// ------------------------------------------------------------------------------------//
