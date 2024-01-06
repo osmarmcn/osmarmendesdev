@@ -28,6 +28,17 @@
     
 }
 
+.about-img{
+    width: 100px;
+  
+}
+
+.about-img img{
+    width: 14rem;
+    border-radius: 2rem;
+      box-shadow: 0 0 2rem var(--main-color);
+}
+
 .heading{
     text-align: center;
     font-size: 3rem;

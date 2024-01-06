@@ -8,10 +8,10 @@
     scroll-behavior: smooth;
 }
 
-html{
+/* html{
     font-size: 62.5%;
     overflow-x: hidden;
-}
+} */
 
 :root{
     --bg-color:#1f242d;
@@ -30,7 +30,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 2rem 9%;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -83,6 +83,7 @@ body{
 
 #menu-icon{
     font-size: 3.6rem;
+    cursor: pointer;
     color: var(--text-color);
     display: none;
 }
@@ -284,7 +285,7 @@ body{
 
 @media (max-width: 1200px){
     html{
-        font-size: 55%;
+        font-size: 75%;
     }
 }
 
@@ -295,6 +296,10 @@ body{
 
     section{
         padding: 10rem 3% 2rem;
+    }
+
+    .service{
+        padding-bottom: 7rem;
     }
 
     .footer{
@@ -316,16 +321,57 @@ body{
         border-top: .1rem solid rgba(0,0,0, .2);
         box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
         display: none;
+        
     }
 
-    .navbar .active{
+    .navbar.active{
         display: block;
     }
 
     .navbar a{
         display: block;
         font-size: 2rem;
+        margin: 3rem 0;
     }
 
-   
+    .home{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+
+    }
+
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-content p{
+        font-size: 1.6rem;
+    }
+
+    .home-img img{
+        width: 35vw;
+        margin-top: 10rem;
+       
+    }
+
+    .service h2{
+        margin-bottom: 3rem;
+
+    }
+
+    
 }
+
+@media (max-width: 450px){
+        html {
+            font-size: 50%;
+        }
+
+        .contact form .input-box input{
+            width: 100%;
+        }
+    }

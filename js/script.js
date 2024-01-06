@@ -6,20 +6,25 @@ var typed = new Typed(".dynamic-text", {
     loop: true
 })
 
-let menuIcon = document.getElementById('menu-icon')
+let menuIcon = document.getElementById("menu-icon")
 let navbar = document.querySelector('.navbar')
 // <i class='bx bxs-x-circle'></i>
-menuIcon.addEventListener("click", (e) =>{
-    e.classList.toggle('bxs-x-circle')
+// menuIcon.addEventListener("click", (e) =>{
+//     e.classList.toggle('bxs-x-circle')
+//     navbar.classList.toggle('active')
+// })
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bxs-x-circle')
     navbar.classList.toggle('active')
-})
-// menuIcon.onclick = () => {
-//     menu
-//     
-// }
+  
+}
+
+// ------------------------ remove ------------------------------------------------------//
+menuIcon.classList.remove('bxs-x-circle')
+navbar.classList.remove('active')
 
 
-// -------------------------------------------------------------------------------//
+// --------------------------------------------------------------------------------//
 
 let section = document.querySelectorAll('section')
 let navLinks = document.querySelectorAll('header nav a')

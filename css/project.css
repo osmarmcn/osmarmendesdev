@@ -54,7 +54,7 @@
 }
 
 .services-box p{
-    font-size: 1.6rem;
+    font-size: 1rem;
     margin: 1rem 0 3rem;
     text-align: justify;
 
@@ -72,9 +72,11 @@
 
 .portfolio-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 2.5rem;
+    padding: 1rem 1%;
+    
 }
 
 .portfolio-box{
@@ -83,8 +85,9 @@
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
-    width: 400px;
-    height: 350px;
+    width: 450px;
+    height: 370px;
+    
 
 }
 
@@ -93,9 +96,9 @@
     transition: .5s ease;
 }
 
-/* .portfolio-box:hover img{
+.portfolio-box:hover img{
     transform: scale(1.1);
-} */
+} 
 
 .portfolio-box .portfolio-layer{
     position: absolute;
@@ -125,7 +128,7 @@
 }
 
 .portfolio-layer p{
-    font-size: 1,6rem;
+    font-size: 1.1rem;
     margin: .3rem 0 1rem;
 }
 
@@ -143,3 +146,89 @@
     font-size: 2rem;
     color: var(--second-bg-color);
 }
+
+@media (max-width: 991px){
+    .portfolio{
+        padding-bottom: 7rem;
+        min-width: auto;
+        min-height: auto;
+    }
+
+    .portfolio-container{
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-box{
+        width: 350px;
+        height: 280px;
+    }
+
+    .portfolio-layer h4{
+        font-size: 2.5rem;
+    }
+
+    .portfolio-layer p{
+        font-size: 1rem;
+        margin: .3rem 0 1rem;
+    }
+
+    .portfolio-layer a{
+        width: 3rem;
+        height: 3rem;
+    }
+
+
+}
+
+
+@media (max-width: 768px){
+
+    .portfolio-container{
+        /* gap: 1.5rem;
+        padding: .5rem 1%; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio h2{
+        margin-bottom: 3rem;
+
+    }
+
+    .portfolio-box{
+        width: 310px;
+        height: 220px;
+    }
+
+    .portfolio-layer h4{
+        font-size: 2.5rem;
+    }
+
+    .portfolio-layer p{
+        font-size: 1rem;
+        margin: .3rem 0 1rem;
+    }
+
+    .portfolio-layer a{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    @media (max-width: 617px){
+        .portfolio-container{
+            /* gap: 1.5rem;
+            padding: .5rem 1%; */
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+
+}
+
+
+    
