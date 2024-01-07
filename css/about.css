@@ -28,6 +28,23 @@
     
 }
 
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2%;
+   
+}
+
+.about-content-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 49%;
+    
+}
+
 .about-img{
     width: 100px;
   
@@ -36,7 +53,7 @@
 .about-img img{
     width: 14rem;
     border-radius: 2rem;
-      box-shadow: 0 0 2rem var(--main-color);
+    box-shadow: 0 0 2rem var(--main-color);
 }
 
 .heading{
@@ -44,7 +61,7 @@
     font-size: 3rem;
 }
 
-.about-content h2{
+.about-content-text h2{
     text-align: left;
     line-height: 1.2;
     
@@ -54,11 +71,11 @@ h2 span{
     color: var(--main-color);
 }
 
-.about-content h3{
+.about-content-text h3{
     font-size: 2.2rem;
 }
 
-.about-content p{
+.about-content-text p{
     font-size: 1rem;
     text-align: justify;
     margin: 1.6rem 0 2.2rem;
@@ -80,15 +97,16 @@ h2 span{
 
 .cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 3.6rem;
-    gap:3rem;
+    gap:6rem;
 }
 
 .box{
     border-bottom: 3px solid var(--main-color);
-    padding: 15px 18px;
+     padding: 15px 18px; 
+    
     border-radius: 10px 0 0 0;
     background: var(--bg-color);
     cursor: pointer;
@@ -105,7 +123,7 @@ h2 span{
    
 }
 .box p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: .3rem;
 }
@@ -116,3 +134,37 @@ h2 span{
 
 }
 
+
+@media (max-width: 768px){
+    .box p{
+        font-size: 1rem;
+    }
+    .cards{
+        gap:1.5rem;
+    }
+    .box{
+        padding: 12px 15px;
+    }
+    .box p{
+        font-size: .9rem;
+        
+    }
+    
+    .box img{
+        width: 1.8rem;
+        height: 1.8rem;
+    
+    }
+}
+
+
+
+@media (max-width: 450px){
+    .cards{
+        gap:1rem;
+    }
+
+    .box{
+        padding: 10px 12px;
+    }
+}
