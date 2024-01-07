@@ -5,7 +5,7 @@ var typed = new Typed(".dynamic-text", {
     backDelay:1000,
     loop: true
 })
-
+// ---------------------- icon menu ----------------------------------------------------//
 let menuIcon = document.getElementById("menu-icon")
 let navbar = document.querySelector('.navbar')
 // <i class='bx bxs-x-circle'></i>
@@ -51,4 +51,18 @@ let header = document.querySelector('header')
 header.classList.toggle('sticky', window.scrollY > 100)
 
 
-// ------------------------------------------------------------------------------------//
+// ------------------------------scrollreveal---------------------------------------------//
+
+ScrollReveal({ 
+    // reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay:200
+});
+
+ScrollReveal().reveal('.heading', { origin: 'top'});
+ScrollReveal().reveal('.services-container, .portfolio-box, .contact form', { origin: 'bottom'});
+ScrollReveal().reveal('.about-img', { origin: 'left'});
+ScrollReveal().reveal('.about-content-text', { origin: 'right'});
+
+

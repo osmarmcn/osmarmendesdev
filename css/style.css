@@ -95,6 +95,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 4rem;
     padding: 2rem 10% 0;
 
 }
@@ -139,6 +140,7 @@ body{
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
+    text-align: justify;
 }
 
 
